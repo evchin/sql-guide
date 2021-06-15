@@ -173,7 +173,7 @@ What I personally did (though not necessarily what *you* need to do) is:
 ```
 CREATE, MAKE, TABLE, FIELDS, INSERT, VALUES, SELECT, STAR, FROM, WHERE, DROP, COMMA, INTO, SYMBOL, SPACE, QUOTE, RELATIONAL, AND, OR, UNARY, START_BRACKET, END_BRACKET, UNKNOWN, END
 ```
-2. Create a MAP that maps each string to the correct symbol. For example, "create" maps to CREATE, "*" to STAR, etc. Note: you probably won't need to map some of these token types - for example, `QUOTE` will not require a mapping, nor will `END`. 
+2. Create a MAP that maps each string to the correct symbol. For example, "create" maps to CREATE, "*" to STAR, etc. Note: you probably won't need to map some of these token types - for example, `QUOTE` will not require a mapping, nor will `END`.
 3. Then, within your `operator>>` method, as you're checking for what type of token something is, you can just use your map to let you know if there's a corresponding symbol for your token. If your map says that you have a token match, set the token's type to that type.
 
 For #3, an example of your `operator>>` function could be:
