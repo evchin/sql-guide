@@ -1,8 +1,6 @@
-# SQL Guide
+# Parser Guide
 
 *Very important: The guide below is **one** path out of hundreds. It's just the path I personally took, and what made sense to me. It is **very** probable that you can think of a different way of going about things that make more sense to you. Please take those liberties and trust your intelligence.*
-
-## Parser
 
 ### What is Parser?
 
